@@ -16,10 +16,11 @@ normBrake=Brake_Pos.Value/maximo;
 % figure
 % plot(Car_Coord_X.Value, Car_Coord_Y.Value)
 
-laps = unique(Session_Lap_Count.Value)
+laps = unique(Session_Lap_Count.Value);
+laps = mat2cell()
 cell_array = cell(size(laps));
   for i=1:length(laps)
-    cell_array{i} = num2str(laps(i))
+    cell_array{i} = laps(i)
   end
   cell_array
   teste={'1','0'}
