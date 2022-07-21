@@ -23,3 +23,7 @@ cell_array = cell(size(laps));
   end
   cell_array
   teste={'1','0'}
+
+for i=2:length(laps)
+    cell_array{i} = num2str(laps(i))
+end
